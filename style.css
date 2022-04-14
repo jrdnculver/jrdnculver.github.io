@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Exo 2";
+}
+
+/* Index */
+
+.index {
+  height: 100vh;
+}
+
+.indexNavi {
+  font-size: 1.4em;
+}
+
+.headerIcon {
+  margin: 1em;
+}
+
+.logoHeader {
+  float: left;
+  margin-top: 0.4em;
+}
+
+.logoImage img {
+  height: 50px;
+  float: left;
+}
+
+.navigationList {
+  float: right;
+  margin: 0.5em 3em 0em 0em;
+  font-weight: bold;
+}
+
+.navigationList li {
+  display: inline;
+  margin-left: 15px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: #a52a2a;
+}
+
+.mainImage {
+  position: relative;
+}
+
+.mainImage img {
+  position: absolute;
+  margin-top: 5em;
+}
+
+.mainImagePicture {
+  position: absolute;
+  top: 130px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../images/lanscapeWall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 76%;
+  margin-left: 12%;
+  border: 2px solid #a52a2a;
+  transform: scale(1);
+}
+
+.mainImagePicture:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("../images/lanscapeWall.jpg");
+}
+
+.mainImage .theDream {
+  position: absolute;
+  width: 56%;
+  margin-left: 22%;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  top: 200px;
+}
+
+.mainImage .thePromise {
+  position: absolute;
+  width: 56%;
+  margin-left: 22%;
+  font-size: 1.4em;
+  color: #fff;
+  text-align: center;
+  top: 330px;
+  line-height: 1.4;
+}
+
+/* What we offer */
+
+.whatWeOffer {
+  background-color: #d3d9d6;
+  color: #a52a2a;
+  background-color: #d3d9d6;
+  height: 100vh;
+  margin: 3%;
+  display: grid;
+  padding-left: 18%;
+  grid-template-columns: repeat(4, 225px);
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-areas:
+    "h h h h"
+    "l ha m ma"
+    "l ha m ma"
+    "l ha m ma"
+    "l ha m ma";
+}
+
+.header {
+  grid-area: h;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 40px;
+}
+
+.hardScape {
+  text-align: center;
+  margin-top: 1em;
+  padding: 1.5em;
+  font-size: 1.2em;
+  grid-area: ha;
+}
+
+.hardScape img {
+  height: 32px;
+}
+
+.landScape {
+  text-align: center;
+  margin-top: 1em;
+  padding: 1.5em;
+  font-size: 1.2em;
+  grid-area: l;
+}
+
+.landScape img {
+  height: 30px;
+}
+
+.mowing {
+  text-align: center;
+  margin-top: 1em;
+  padding: 1.5em;
+  font-size: 1.2em;
+  grid-area: m;
+}
+
+.mowing img {
+  height: 32px;
+}
+
+.maintainence {
+  text-align: center;
+  margin-top: 1em;
+  padding: 1.5em;
+  font-size: 1.2em;
+  grid-area: ma;
+}
+
+.maintainence img {
+  height: 32px;
+}
+
+/* Project Pictures */
+
+.projectPictures {
+  height: 100vh;
+  padding-top: 5em;
+  margin: 0 3%;
+}
+
+.projectImages li {
+  list-style: none;
+}
+
+.image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/houseLandscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image1:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../images/houseLandscape.jpg");
+}
+
+.image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/beautifulLanscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image2:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("../images/beautifulLanscape.jpg");
+}
+
+.image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/hillside.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image3:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../images/hillside.jpeg");
+}
+
+.image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/stepLandscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image4:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("../images/stepLandscape.jpg");
+}
+
+.image5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/nightHS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image5:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("../images/nightHS.jpg");
+}
+
+.image6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/stepwayHS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image6:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("../images/stepwayHS.jpg");
+}
+
+.image7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/backyardHS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image7:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("../images/backyardHS.jpg");
+}
+
+.image8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/fireHS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  transform: scale(1);
+}
+
+.image8:hover {
+  transform: scale(0.95);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("../images/fireHS.jpg");
+}
+
+/* Contact Us */
+
+.contactUs {
+  height: 100vh;
+  background-color: #d3d9d6;
+  margin: 0em 3% 5% 3%;
+}
+
+label {
+  font-size: 1.1em;
+}
+input {
+  width: 157%;
+}
+
+select {
+  width: 157%;
+  margin-top: 1em;
+}
+textarea {
+  width: 135%;
+}
+
+.contactForm form {
+  color: #a52a2a;
+  padding-top: 10%;
+  margin-left: 35%;
+  display: grid;
+  grid-template-columns: 125px 200px;
+  grid-template-rows: 50px 40px 40px 50px 50px 20px;
+  grid-template-areas:
+    "h h"
+    "fl fi"
+    "ll li"
+    "dl di"
+    "ta ta"
+    "tb tb"
+    "s s";
+}
+
+#formHeader {
+  grid-area: h;
+  text-align: center;
+  color: #a52a2a;
+  font-size: 1.2em;
+  border-bottom: 2px solid #a52a2a;
+  width: 135%;
+}
+#fLab {
+  grid-area: fl;
+  margin-top: 0.75em;
+}
+#fInp {
+  grid-area: fi;
+  margin-top: 0.75em;
+}
+#lLab {
+  grid-area: ll;
+  margin-top: 0.75em;
+}
+#lInp {
+  grid-area: li;
+  margin-top: 0.75em;
+}
+
+#dropLab {
+  grid-area: dl;
+  margin-top: 0.75em;
+}
+
+#dropInp {
+  grid-area: di;
+}
+
+#textAsk {
+  grid-area: ta;
+  width: 135%;
+}
+
+#textBox {
+  grid-area: tb;
+  background-color: black;
+}
+
+#submit {
+  grid-area: s;
+  padding-top: 10em;
+}
+
+#submit button {
+  background-color: #a52a2a;
+  padding: 0.5em;
+  width: 135%;
+  color: #fff;
+}
