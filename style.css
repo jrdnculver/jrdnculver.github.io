@@ -67,7 +67,7 @@ a:active {
   position: absolute;
   top: 130px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("../images/lanscapeWall.jpg");
+    url("lanscapeWall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -80,7 +80,7 @@ a:active {
 .mainImagePicture:hover {
   transform: scale(1.1);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url("../images/lanscapeWall.jpg");
+    url("lanscapeWall.jpg");
 }
 
 .mainImage .theDream {
@@ -193,7 +193,7 @@ a:active {
 
 .image1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/houseLandscape.jpg");
+    url("houseLandscape.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -206,12 +206,12 @@ a:active {
 .image1:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("../images/houseLandscape.jpg");
+    url("houseLandscape.jpg");
 }
 
 .image2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/beautifulLanscape.jpg");
+    url("beautifulLanscape.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -224,12 +224,12 @@ a:active {
 .image2:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url("../images/beautifulLanscape.jpg");
+    url("beautifulLanscape.jpg");
 }
 
 .image3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/hillside.jpeg");
+    url("hillside.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -242,12 +242,12 @@ a:active {
 .image3:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../images/hillside.jpeg");
+    url("hillside.jpeg");
 }
 
 .image4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/stepLandscape.jpg");
+    url("stepLandscape.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -260,12 +260,12 @@ a:active {
 .image4:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url("../images/stepLandscape.jpg");
+    url("stepLandscape.jpg");
 }
 
 .image5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/nightHS.jpg");
+    url("nightHS.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -278,12 +278,12 @@ a:active {
 .image5:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url("../images/nightHS.jpg");
+    url("nightHS.jpg");
 }
 
 .image6 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/stepwayHS.jpg");
+    url("stepwayHS.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -296,12 +296,12 @@ a:active {
 .image6:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url("../images/stepwayHS.jpg");
+    url("stepwayHS.jpg");
 }
 
 .image7 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/backyardHS.jpg");
+    url("backyardHS.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -314,12 +314,12 @@ a:active {
 .image7:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url("../images/backyardHS.jpg");
+    url("backyardHS.jpg");
 }
 
 .image8 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../images/fireHS.jpg");
+    url("fireHS.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 275px;
@@ -332,7 +332,7 @@ a:active {
 .image8:hover {
   transform: scale(0.95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url("../images/fireHS.jpg");
+    url("fireHS.jpg");
 }
 
 /* Contact Us */
