@@ -20,6 +20,5 @@ function modifyPixel(pxValue) {
    pxValue = Number(pxValue)
    pxValue = pxValue + 10
    pxValue = String(pxValue) + 'px'
-   console.log(pxValue)
    return pxValue
 }
