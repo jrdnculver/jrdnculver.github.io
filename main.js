@@ -11,8 +11,8 @@ var setting = setInterval(changePixel, 500)
 function changePixel(){
     width = modifyPixel(width)
     height = modifyPixel(height)
-    // person.style.width = width
-    // person.style.height = height
+    person.style.width = width
+    person.style.height = height
 }
 
 function modifyPixel(pxValue) {
