@@ -1,16 +1,66 @@
-body {
-    background-color: darkblue;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Exo 2";
+  }
 
-#maincontent img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 55%;
-    margin-left: 22.5%;
-}
+  body {
+    background-color: #a9a9a9;
+  }
 
-#maincontentaddon img{
-    position: absolute;
-}
+  .wrapperContainer {
+    height: 2.5em;
+  }
+  
+  /* Index */
+  
+  .index {
+    height: 100vh;
+  }
+  
+  .indexNavi {
+    font-size: 1.4em;
+  }
+  
+  .headerIcon {
+    margin: 1em;
+  }
+  
+  .logoHeader {
+    float: left;
+    margin-top: 0.4em;
+  }
 
+  .navigationList {
+    float: right;
+    margin: 0.5em 3em 0em 0em;
+    font-weight: bold;
+  }
+
+  .navigationList li {
+    display: inline;
+    margin-left: 15px;
+  }
+  
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover,
+  a:active {
+    color: #a52a2a;
+  }
+
+  div img {
+    margin-left: 12%;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 75%;
+  }
+  

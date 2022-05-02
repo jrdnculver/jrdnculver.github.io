@@ -1,0 +1,76 @@
+body{
+    box-sizing: border-box;
+    background-color: cadetblue;
+    color: white;
+}
+
+#title {
+    text-align: center;
+}
+
+img {
+    margin: 3em 0;
+}
+
+.center img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+#accountCreation img {
+    display: inline;
+    margin-left: 9%;
+}
+
+#main img{
+    display: inline;
+    margin-left: 20%;
+}
+
+#setUpGoal img{
+    display: inline;
+    margin-left: 20%;
+}
+
+.listHeader h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 4em;
+}
+
+.imgDescription {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+li {
+    list-style-type: none;
+    margin-top: .5em;
+}
+
+a:link {
+    color: rgb(211, 224, 21);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: rgb(81, 97, 11);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: rgb(11, 87, 15);
+background-color: transparent;
+text-decoration: underline;
+}
