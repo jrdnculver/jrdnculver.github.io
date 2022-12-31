@@ -191,7 +191,48 @@ function addRow(week, weight, tdee, allowed, bmi){
     table.appendChild(tr);
 }
 
+function removeTable(){
+    table = document.getElementById('table_results');
+    if (table)
+        table.remove();
+}
+
+function addTable(){
+    container = document.getElementById('table_container');
+    table = document.createElement('table');
+    table.setAttribute('id', 'table_results');
+
+    tr = document.createElement('tr');
+
+    weeks = document.createElement('th');
+    weeks.innerHTML = 'Weeks';
+    
+    weight = document.createElement('th');
+    weight.innerHTML = 'Weight';
+
+    tdee = document.createElement('th');
+    tdee.innerHTML = 'TDEE';
+
+    daily_allowed = document.createElement('th');
+    daily_allowed.innerHTML = 'Daily Allowed';
+    
+    bmi = document.createElement('th');
+    bmi.innerHTML = 'BMI';
+
+    tr.appendChild(weeks)
+    tr.appendChild(weight)
+    tr.appendChild(tdee)
+    tr.appendChild(daily_allowed)
+    tr.appendChild(bmi)
+    table.appendChild(tr);
+    container.appendChild(table);
+}
+
 function main(){
+
+    removeTable()
+    addTable()
+
     activity = getActivity();
     weight = getWeight();
     height = getHeight();
@@ -225,4 +266,6 @@ function main(){
             break;
         }
     }
+
+
 }

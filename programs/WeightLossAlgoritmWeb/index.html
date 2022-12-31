@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_weight_loss.css">
     <title>Weight Loss</title>
 </head>
 <body>
+    <div class="dropdown">
+        <nav>
+            <ul id="nav_main">
+                <li class="nav_item"><a href="../../index.html">Home</a></li>
+                <li class="nav_item" id="dropdown_programs"><a href="">Programs</a>
+                    <ul id="dropdown_program_items">
+                        <li class="dropdown_program_item"><a href="#">Calorie Counting</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <form method="post">
     <div id="grid_container">
         <div id="grid_container_title">
@@ -53,9 +66,6 @@
     </div>
     <br>
     <div id="table_container">
-        <div id="index_header">
-            <h1>Weight Loss Schedule</h1>
-        </div>
         <table id="table_results">
             <tr>
                 <th style="width:15%">Week</th>
