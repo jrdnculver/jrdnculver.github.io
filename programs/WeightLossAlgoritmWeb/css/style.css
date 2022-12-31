@@ -1,0 +1,93 @@
+html{
+    box-sizing: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+#grid_container {
+    margin: 4% 1%;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    width: 30%;
+    float: left;
+    background-color: darkgray;
+    padding-bottom: 30px;
+}
+
+#grid_container_title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid_item {
+    background-color: #F57513;
+    border: 3px solid #000;
+    padding: 5px 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+input,
+#weight,
+#height, 
+#gender, 
+#activity_lvl, 
+#weekly_loss,
+#min_cals,
+#age,
+#weeks {
+    font-size: 1.25em;
+    width: 70%;
+}
+
+#createBtn button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #000;
+    color: #FFF;
+    font-size: 1.25em;
+    padding: 5px;
+}
+
+#table_container {
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+}
+
+#index_header {
+    font-size: 2em;
+    text-align: center;
+    background-color: darkgray;
+}
+
+#index_header h1 {
+    padding: 1em;
+}
+
+th {
+    font-size: 2em;
+    border: 3px solid #000;
+    padding: 5px 20px;
+    width: 70%;
+    margin-left: 25%;
+    background-color: #F57513;
+}
+
+#table_results_row {
+    font-size: 1.50em;
+    padding: 5px 20px;
+    margin-left: 25%;
+    background-color: #000;
+    color: #FFF;
+}
+
+.table_results_row_item {
+    border: 3px solid #000;
+    text-align: center;
+}

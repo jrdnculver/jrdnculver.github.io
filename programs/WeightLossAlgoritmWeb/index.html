@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weight Loss</title>
+</head>
+<body>
+    <form method="post">
+    <div id="grid_container">
+        <div id="grid_container_title">
+            <h3>Info</h3>
+        </div>
+        <div class="grid_item"><input type="text" id="title" name="title" placeholder="Name" autocomplete="off"></div>
+        <div class="grid_item"><select name="weight" id="weight">
+                                    <option value="" disabled selected hidden>Weight</option>
+                                </select></div>
+        <div class="grid_item"><select name="height" id="height">
+                                    <option value="" disabled selected hidden>Height</option>
+                                </select></div>
+        <div class="grid_item"><select name="age" id="age">
+                                    <option value="" disabled selected hidden>Age</option>
+                                </select></div>
+        <div class="grid_item"><select name="activity_lvl" id="activity_lvl">
+                                    <option value="" disabled selected hidden>Activity Level</option>
+                                    <option value="Sedentary">Sedentary</option>
+                                    <option value="Light">Light</option>
+                                    <option value="Moderate">Moderate</option>
+                                    <option value="High Intensity">High Intensity</option>
+                                    <option value="Very High Intensity">Very High Intensity</option>
+                                </select></div>
+        <div class="grid_item"><select name="gender" id="gender">
+                                    <option value="" disabled selected hidden>Gender</option>
+                                    <option value="M">M</option>
+                                    <option value="F">F</option>
+                                </select></div>
+        <div class="grid_item"><select name="weeks" id="weeks">
+                                    <option value="" disabled selected hidden>Number of Weeks</option>
+                                </select></div>
+        <div class="grid_item"><select name="weekly_loss" id="weekly_loss">
+                                    <option value="" disabled selected hidden>Weekly Loss</option>
+                                </select></div>
+        <div class="grid_item"><select name="min_cals" id="min_cals">
+                                    <option value="">Min Daily Calories</option>
+                                </select></div>
+        <br>
+        <div id="createBtn">
+            <button type="button" onclick="main()">Create</button>
+        </div>
+    </form>
+    </div>
+    <br>
+    <div id="table_container">
+        <div id="index_header">
+            <h1>Weight Loss Schedule</h1>
+        </div>
+        <table id="table_results">
+            <tr>
+                <th style="width:15%">Week</th>
+                <th style="width:15%">Weight</th>
+                <th style="width:15%">TDEE</th>
+                <th style="width:25%">Daily Allowed</th>
+                <th style="width:15%">BMI</th>
+            </tr>
+        </table>
+
+    </div>
+</body>
+<script src="javascript/index.js"></script>
+</html>
