@@ -17,7 +17,7 @@ a:visited {
     color: #000;
 }
 
-/* Navigation */
+/* Navigation Web */
 
 nav #nav_main .nav_item {
     display: inline;
@@ -70,6 +70,14 @@ nav #nav_main .nav_item:hover {
 .dropdown #dropdown_programs:hover #dropdown_program_items {
     display: block;
 }
+
+/*Navigation Mobile*/
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 
 /* Index */
 

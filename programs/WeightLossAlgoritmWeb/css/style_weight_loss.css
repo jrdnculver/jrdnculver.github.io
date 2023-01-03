@@ -6,12 +6,14 @@ body{
     background-color: gray;
 }
 
+/*Web*/
+
 #grid_container {
     margin: 4% 1%;
     display: grid;
     grid-template-columns: auto;
-    padding: 5px;
     width: 30%;
+    padding-right: 20px;
     float: left;
     background-color: darkgray;
     padding-bottom: 30px;
@@ -28,8 +30,7 @@ body{
     border: 3px solid #000;
     padding: 5px 10px;
     text-align: center;
-    width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 input,
@@ -91,3 +92,40 @@ th {
     border: 3px solid #000;
     text-align: center;
 }
+
+/*
+#week_th,
+#weight_th,
+#bmi_th {
+    width: 15%;
+}
+
+#tdee_th {
+    width: 25%;
+}
+#daily_allowed_th{
+    width: 15%
+}
+*/
+
+/*Mobile*/
+
+@media only screen and (max-width: 600px) {
+    #grid_container  {
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    #table_container {
+        width: 500px;
+    }
+
+    #table_results {
+        font-size: .6em;
+    }
+
+    #table_results_row {
+        font-size: 1em;
+    }
+
+  }
