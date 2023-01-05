@@ -177,20 +177,141 @@ function weekLossData(){
     }
 }
 
-function addRow(week, weight, tdee, allowed, bmi){
+function removeCals(){
+    min = document.getElementById('min_cals');
+    console.log(min.length);
+    count = 0;
+    while(min.length > 0){
+        try{
+            min.remove(count);
+        }
+        catch{
+            break;
+        }
+    }
+}
+
+function getMinCals(){
+    removeCals();
+    gender = document.getElementById('gender').value;
+
+    min = document.getElementById('min_cals');
+     
+    male = 1500;
+    female = 1200;
+    count = 0;
+
+    while(count <= 10){
+        if(gender == 'M'){
+            option = document.createElement('option');
+            option.innerHTML = male;
+            min.appendChild(option);
+            male += 50;
+            count += 1;
+        }
+        else if(gender == 'F'){
+            option = document.createElement('option');
+            option.innerHTML = female;
+            min.appendChild(option);
+            female += 50;
+            count += 1;
+        }
+        else{
+            console.log(gender);
+            break;
+        }
+    }
+
+    
+}
+
+function addTableRow(week, weight, tdee, allowed, bmi){
     list1 = [week, weight, tdee, allowed, bmi];
+    list2 = ['Week', 'Weight', 'TDEE', 'Daily Allowed', 'BMI'];
     table = document.getElementById('table_results');
     tr = document.createElement('tr');
     tr.setAttribute('id', 'table_results_row');
+
+    count = 0;
     list1.forEach(element => {
         td = document.createElement('td');
         td.setAttribute('class', 'table_results_row_item');
+        td.setAttribute('label', list2[count])
         td.innerHTML = element;
         tr.appendChild(td);
+        count += 1;
+        if (count == 5){
+            count = 0;
+        }
     });
     table.appendChild(tr);
 }
 
+function addListRow(week, weight, tdee, allowed, bmi){
+    list = document.getElementById('list_results');
+
+    weeks_td = document.createElement('dt');
+    weeks_dd = document.createElement('dd');
+
+    weeks_td.innerHTML = "Week";
+    weeks_dd.innerHTML = week;
+
+
+    list.appendChild(weeks_td);
+    list.appendChild(weeks_dd);
+
+    weight_td = document.createElement('dt');
+    weight_dd = document.createElement('dd');
+
+    weight_td.innerHTML = "Weight";
+    weight_dd.innerHTML = weight;
+
+    list.appendChild(weight_td);
+    list.appendChild(weight_dd);
+
+    tdee_td = document.createElement('dt');
+    tdee_dd = document.createElement('dd');
+
+    tdee_td.innerHTML = "TDEE";
+    tdee_dd.innerHTML = tdee;
+
+    list.appendChild(tdee_td);
+    list.appendChild(tdee_dd);
+
+    daily_td = document.createElement('dt');
+    daily_dd = document.createElement('dd');
+
+    daily_td.innerHTML = "Daily Allowed";
+    daily_dd.innerHTML = allowed;
+
+    list.appendChild(daily_td);
+    list.appendChild(daily_dd);
+
+    bmi_td = document.createElement('dt');
+    bmi_dd = document.createElement('dd');
+
+    bmi_td.innerHTML = "BMI";
+    bmi_dd.innerHTML = bmi
+
+    list.appendChild(bmi_td);
+    list.appendChild(bmi_dd);
+
+}
+
+function removeList() {
+    list = document.getElementById('list_results');
+    if (list)
+        list.remove();
+}
+
+function addList() {
+    container = document.getElementById('list_container')
+    list = document.createElement('dl');
+    list.setAttribute('id', 'list_results');
+
+    container.appendChild(list);
+    
+}
 function removeTable(){
     table = document.getElementById('table_results');
     if (table)
@@ -200,38 +321,51 @@ function removeTable(){
 function addTable(){
     container = document.getElementById('table_container');
     table = document.createElement('table');
+    table_head = document.createElement('thead');
+    table_body = document.createElement('tbody');
+
     table.setAttribute('id', 'table_results');
 
     tr = document.createElement('tr');
 
     weeks = document.createElement('th');
-    weeks.innerHTML = 'Weeks';
+    weeks.setAttribute('id', 'week_th');
+    weeks.innerHTML = 'Week';
     
     weight = document.createElement('th');
+    weight.setAttribute('id', 'weight_th');
     weight.innerHTML = 'Weight';
 
     tdee = document.createElement('th');
+    tdee.setAttribute('id', 'tdee_th');
     tdee.innerHTML = 'TDEE';
 
     daily_allowed = document.createElement('th');
+    daily_allowed.setAttribute('id', 'daily_allowed_th');
     daily_allowed.innerHTML = 'Daily Allowed';
     
     bmi = document.createElement('th');
+    bmi.setAttribute('id', 'bmi_th');
     bmi.innerHTML = 'BMI';
 
-    tr.appendChild(weeks)
-    tr.appendChild(weight)
-    tr.appendChild(tdee)
-    tr.appendChild(daily_allowed)
-    tr.appendChild(bmi)
-    table.appendChild(tr);
+    tr.appendChild(weeks);
+    tr.appendChild(weight);
+    tr.appendChild(tdee);
+    tr.appendChild(daily_allowed);
+    tr.appendChild(bmi);
+    table.appendChild(table_head);
+    table.appendChild(table_body);
+    table_head.appendChild(tr);
     container.appendChild(table);
 }
 
 function main(){
 
-    removeTable()
-    addTable()
+    removeTable();
+    addTable();
+
+    removeList();
+    addList();
 
     activity = getActivity();
     weight = getWeight();
@@ -255,7 +389,8 @@ function main(){
         }
 
         week = i + 1;
-        addRow(week, weight, tdee, allowed, bmi);
+        addTableRow(week, weight, tdee, allowed, bmi);
+        addListRow(week, weight, tdee, allowed, bmi);
         weight = weight - weekly_loss;
         tdee = GetTDEE(activity, gender, weight, height, age).toFixed(1);
         allowed = GetAllowed(activity, gender, weight, height, age, weekly_loss).toFixed(1);

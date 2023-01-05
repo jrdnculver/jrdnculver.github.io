@@ -55,10 +55,13 @@ input,
     padding: 5px;
 }
 
+/*Table*/
+
 #table_container {
     width: 60%;
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
+    margin-top: 2.5%;
 }
 
 #index_header {
@@ -93,39 +96,59 @@ th {
     text-align: center;
 }
 
-/*
 #week_th,
-#weight_th,
-#bmi_th {
-    width: 15%;
-}
+  #weight_th,
+  #tdee_th,
+  #daily_allowed_th,
+  #bmi_th {
+      width: 20%;
+  }
 
-#tdee_th {
-    width: 25%;
+/*List*/
+
+#list_container {
+    display: none;
 }
-#daily_allowed_th{
-    width: 15%
-}
-*/
 
 /*Mobile*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
     #grid_container  {
       width: 80%;
       margin-left: 10%;
     }
 
     #table_container {
-        width: 500px;
+        width: 100%;
     }
+    
+    table thead {
+        display: none;
+      }
 
     #table_results {
-        font-size: .6em;
+        width: 50%;
+        margin-left: 20%;
     }
 
-    #table_results_row {
-        font-size: 1em;
+    table td {
+        display: flex;
     }
+    
+    table td::before {
+        content: attr(label);
+        font-weight: bold;
+        width: 200px;
+        border: 4px solid #F57513;
+        margin-right: 25px;
+        background-color: gray;
+    }
+
+    .table_results_row_item {
+        background-color: #F57513;
+        width: 100%;
+    }
+
+    
 
   }

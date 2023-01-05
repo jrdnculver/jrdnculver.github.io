@@ -44,7 +44,7 @@
                                     <option value="High Intensity">High Intensity</option>
                                     <option value="Very High Intensity">Very High Intensity</option>
                                 </select></div>
-        <div class="grid_item"><select name="gender" id="gender">
+        <div class="grid_item"><select name="gender" id="gender" onchange="getMinCals()">
                                     <option value="" disabled selected hidden>Gender</option>
                                     <option value="M">M</option>
                                     <option value="F">F</option>
@@ -56,7 +56,7 @@
                                     <option value="" disabled selected hidden>Weekly Loss</option>
                                 </select></div>
         <div class="grid_item"><select name="min_cals" id="min_cals">
-                                    <option value="">Min Daily Calories</option>
+                                    <option value="" disabled selected hidden>Min Daily Calories</option>
                                 </select></div>
         <br>
         <div id="createBtn">
@@ -67,15 +67,23 @@
     <br>
     <div id="table_container">
         <table id="table_results">
-            <tr>
-                <th id="week_th">Week</th>
-                <th id="weight_th">Weight</th>
-                <th id="tdee_th">TDEE</th>
-                <th id="daily_allowed_th">Daily Allowed</th>
-                <th id="bmi_th">BMI</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th id="week_th">Week</th>
+                    <th id="weight_th">Weight</th>
+                    <th id="tdee_th">TDEE</th>
+                    <th id="daily_allowed_th">Daily Allowed</th>
+                    <th id="bmi_th">BMI</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
         </table>
 
+    </div>
+    <div id="list_container">
+        <dl id="list_results"></dl>
     </div>
 </body>
 <script src="javascript/index.js"></script>
