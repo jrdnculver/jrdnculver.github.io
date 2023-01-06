@@ -128,27 +128,34 @@ th {
 
     #table_results {
         width: 50%;
-        margin-left: 20%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     table td {
         display: flex;
+        min-width: 300px;
+        padding-right: 4%;
+        text-align: center;
     }
     
     table td::before {
         content: attr(label);
         font-weight: bold;
         width: 200px;
+        min-width: 200px;
         border: 4px solid #F57513;
         margin-right: 25px;
         background-color: gray;
     }
 
-    .table_results_row_item {
-        background-color: #F57513;
-        width: 100%;
+    tr {
+        border: 4px solid #000;
     }
 
-    
-
+    .table_results_row_item {
+        background-color: #F57513;
+        border: none;
+        width: 100%;
+    }
   }
