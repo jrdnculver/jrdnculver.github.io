@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../app/style.css">
+    <title>Question</title>
+</head>
+<body id="questions_body">
+    <p id="question"></p>
+    <p id="answer"></p>
+    <div id="buttons_container">
+        <button id="show" onclick="showAnswer()">Answer</button>
+        <button id="return" onclick="closeWindow()">Return</button>
+    </div>
+</body>
+<script src="../controller/questions.js"></script>
+</html>
+
+<script>
+    questionsPage();
+</script>
