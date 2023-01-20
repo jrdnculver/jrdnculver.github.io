@@ -1,19 +1,25 @@
 async function toBoard(){
     data = new Data();
 
-    var game_list = [];
-    var set = await data.readJSON();
-    var show_number = data.getShowNumbers(set);
-    var max = show_number.length;
-    var min = 1;
+    while (true){
+        var game_list = [];
+        var set = await data.readJSON();
+        var show_number = data.getShowNumbers(set);
+        var max = show_number.length;
+        var min = 1;
 
-    var random = data.getAvailableNumbers(show_number, max, min);
-    var selection = data.getShowNumberSelection(show_number, random);
-    game_list = data.getGameList(set, selection);
-    sessionStorage.setItem('data', JSON.stringify(data));
-    sessionStorage.setItem('game_list', JSON.stringify(game_list));
+        var random = data.getAvailableNumbers(show_number, max, min);
+        var selection = data.getShowNumberSelection(show_number, random);
+        game_list = data.getGameList(set, selection);
 
-    window.location.href = "../JeopardyScript/views/board.html"
+        if (game_list[0].length == 30){
+            sessionStorage.setItem('data', JSON.stringify(data));
+            sessionStorage.setItem('game_list', JSON.stringify(game_list));
+            break;
+        }
+    }
+
+    window.location.href = "../views/board.html"
 }
 
 class Data{
@@ -25,7 +31,7 @@ class Data{
     async readJSON(){
         var data;
 
-        let fee = await fetch("data/data.json");
+        let fee = await fetch("../data/data.json");
         data = await fee.json();
         return data;
     }

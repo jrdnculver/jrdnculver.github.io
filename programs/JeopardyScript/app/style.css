@@ -4,7 +4,8 @@ body {
   height: 100vh;
 }
 
-/* Index */
+@media (max-width: 2500px) {
+  /* Index */
 
 #index_body {
   background-color: #060CE9;
@@ -157,6 +158,8 @@ td :hover :before {
   font-weight: bold;
   font-size: 1.5em;
 }
+}
+
 
 /* Mobile */
 
