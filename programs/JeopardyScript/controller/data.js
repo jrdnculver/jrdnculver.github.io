@@ -19,7 +19,7 @@ async function toBoard(){
         }
     }
 
-    window.location.href = "../views/board.html"
+    window.location.href = "../JeopardyScript/views/board.html"
 }
 
 class Data{
@@ -31,7 +31,7 @@ class Data{
     async readJSON(){
         var data;
 
-        let fee = await fetch("../data/data.json");
+        let fee = await fetch("data/data.json");
         data = await fee.json();
         return data;
     }
